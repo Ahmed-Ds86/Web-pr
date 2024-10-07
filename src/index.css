@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color: #3b82f6;
+  --secondary-color: #1d4ed8;
+}
+
+.dark {
+  --primary-color: #60a5fa;
+  --secondary-color: #3b82f6;
+}
+
+.green {
+  --primary-color: #22c55e;
+  --secondary-color: #16a34a;
+}
+
+body {
+  @apply bg-gray-100 text-gray-900 transition-colors duration-300;
+}
+
+.dark body {
+  @apply bg-gray-900 text-white;
+}
+
+.green body {
+  @apply bg-green-100 text-green-900;
+}
+
+/* Add more custom styles here */
